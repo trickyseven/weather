@@ -2,8 +2,10 @@ $(function() {
   var handleWeatherResponse = function(data) {
     console.log(data);
 
-    var daily = "Currently, the weather is: " + data.daily.summary;
-    var hour = "The hourly forecast is: " + data.hourly.summary
+    var currently = "Currently, the weather is: " + data.currently.summary + ". The current temperature is " + data.currently.temperature
+    var day0 = "Today's forecast is: " + data.daily.summary;
+    var day1 = "Tomorrow's forecast is: " + data.daily.summary
+    var day2 = "The next day's forecast is: " + data.daily.summary
     // var currently = "currently"
     // $("weather-report").html(currently.temperature);
 
@@ -11,8 +13,10 @@ $(function() {
 
     // var markup = "The weather report... " + "will be here when I finish my homework.";
 
-$('.daily-weather').html(daily);
-$('.hourly-weather').html(hour);
+$('.currently-weather').html(currently);
+$('.day0-weather').html(day0);
+$('.day1-weather').html(day1);
+$('.day2-weather').html(day2);
     // End of your code
 
     $('.weather-report').html(markup);
