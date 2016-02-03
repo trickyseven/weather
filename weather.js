@@ -3,10 +3,11 @@ $(function() {
     console.log(data);
 
     var markup = "The Weather Report is presented below"
-    var currently = "Currently, the weather is: " + data.currently.summary + ". The current temperature is " + data.currently.temperature
-    var day0 = "Today's forecast is: " + data.daily.data[0].summary + " The high will be " + data.daily.data[0].apparentTemperatureMax + " and the low will be " + data.daily.data[0].apparentTemperatureMin;
-    var day1 = "Tomorrow's forecast is: " + data.daily.data[1].summary + " The high will be " + data.daily.data[1].apparentTemperatureMax + " and the low will be " + data.daily.data[1].apparentTemperatureMin;;
-    var day2 = "The next day's forecast is: " + data.daily.data[2].summary + " The high will be " + data.daily.data[2].apparentTemperatureMax + " and the low will be " + data.daily.data[2  ].apparentTemperatureMin;;
+    var currently = data.currently.summary + ". The current temperature is " + data.currently.temperature
+    var day0 = data.daily.data[0].summary + " The high will be " + data.daily.data[0].apparentTemperatureMax + " and the low will be " + data.daily.data[0].apparentTemperatureMin;
+    var day1 = data.daily.data[1].summary + " The high will be " + data.daily.data[1].apparentTemperatureMax + " and the low will be " + data.daily.data[1].apparentTemperatureMin;;
+    var day2 = data.daily.data[2].summary + " The high will be " + data.daily.data[2].apparentTemperatureMax + " and the low will be " + data.daily.data[2  ].apparentTemperatureMin;;
+
     // var currently = "currently"
     // $("weather-report").html(currently.temperature);
 

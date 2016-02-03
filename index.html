@@ -11,11 +11,29 @@
 <body>
   <div class="container">
     <h3><a href="#" class="btn btn-primary get-the-weather">Get the weather</a></h3>
-    <div class="weather-report"></div>
-    <div class="currently-weather"></div>
-    <div class="day0-weather"></div>
-    <div class="day1-weather"></div>
-    <div class="day2-weather"></div>
+    <table class="table table-striped">
+        <thead>
+          <tbody class="weather-report"></tbody>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Currently</td>
+            <td class="currently-weather"></td>
+          </tr>
+          <tr>
+            <td>Today</td>
+            <td class="day0-weather"></td>
+          </tr>
+          <tr>
+            <td>Tomorrow</td>
+            <td class="day1-weather"></td>
+          </tr>
+          <tr>
+            <td>The Next Day</td>
+            <td class="day2-weather"></td>
+          </tr>
+        </tbody>
+    </table>
   </div>
 </body>
 </html>
